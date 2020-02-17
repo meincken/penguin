@@ -1,0 +1,23 @@
+body {
+  font-family: Arial; }
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 960px; }
+  main section + section {
+    margin-left: 10px; }
+  main a {
+    color: #333;
+    text-decoration: none; }
+    main a img {
+      max-width: 100%;
+      transition: all 1s ease-in-out; }
+    main a:hover img {
+      transform: scale(1.1); }
+  main h2 {
+    font-size: 16px;
+    margin-bottom: 0; }
+  main p {
+    margin: 16px 0 0; }
