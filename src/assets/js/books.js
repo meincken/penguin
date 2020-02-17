@@ -7,6 +7,7 @@ fetch(dataURL)
   .then(function(json) {
     let endPoint = json;
     var jsonObject = endPoint;
+    // Strips out and inline script tags
     var string = JSON.stringify(jsonObject).replace(
       /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
       ""
